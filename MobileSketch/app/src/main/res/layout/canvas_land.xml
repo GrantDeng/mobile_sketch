@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="567dp"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/boarder" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="460dp"
+            android:weightSum="1">
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton8"
+                    android:src="@mipmap/ic_crop_free_black_18dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:onClick="selection"
+                    android:nestedScrollingEnabled="false" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton9"
+                    android:src="@mipmap/ic_panorama_fish_eye_black_18dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:onClick="circle" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton10"
+                    android:src="@mipmap/ic_clear_black_18dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:onClick="erase" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton11"
+                    android:src="@mipmap/ic_remove_black_18dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:onClick="line" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton12"
+                    android:src="@mipmap/ic_colorize_black_18dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:onClick="fill" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageButton5"
+                    android:src="@mipmap/ic_crop_din_black_18dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:onClick="rect" />
+
+                <ImageButton
+                    android:layout_width="44dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageButton17"
+                    android:src="@color/colorPrimaryDark"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:clickable="false"
+                    android:onClick="color1" />
+
+                <ImageButton
+                    android:layout_width="44dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageButton18"
+                    android:src="@color/accent_material_light"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:onClick="color3" />
+
+                <ImageButton
+                    android:layout_width="44dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageButton20"
+                    android:src="@android:color/holo_orange_light"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:onClick="color4" />
+
+                <ImageButton
+                    android:layout_width="44dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/imageButton19"
+                    android:src="@color/background_material_dark"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:onClick="color2" />
+            </GridLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:onClick="size3"
+                        android:text="L"
+                        android:nestedScrollingEnabled="true"
+                        android:layout_row="1"
+                        android:layout_column="5" />
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:onClick="size2"
+                        android:text="M"
+                        android:nestedScrollingEnabled="true"
+                        android:layout_row="1"
+                        android:layout_column="5" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:onClick="size1"
+                    android:text="S"
+                    android:nestedScrollingEnabled="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textView4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textView5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/textView6" />
+            </LinearLayout>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="C"
+                android:id="@+id/button11"
+                android:onClick="clean"
+                android:layout_weight="0.09" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.jsketch.grant.mobilesketch.CanvasView
+        android:id="@+id/signature_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="578dp"
+        android:textColor="#FFFFFF" />
+</LinearLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:weightSum="1"
+        android:baselineAligned="false"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/boarder">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Rect"
+                android:src="@mipmap/ic_crop_din_black_18dp"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:onClick="rect" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Select"
+                android:src="@mipmap/ic_crop_free_black_18dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:onClick="selection"
+                android:nestedScrollingEnabled="false" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Circle"
+                android:src="@mipmap/ic_panorama_fish_eye_black_18dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:onClick="circle" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Delete"
+                android:src="@mipmap/ic_clear_black_18dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:onClick="erase" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Line"
+                android:src="@mipmap/ic_remove_black_18dp"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:onClick="line" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Fill"
+                android:src="@mipmap/ic_colorize_black_18dp"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:onClick="fill" />
+
+            <ImageButton
+                android:layout_width="44dp"
+                android:layout_height="36dp"
+                android:id="@+id/imageButton13"
+                android:src="@color/colorPrimaryDark"
+                android:layout_row="0"
+                android:layout_column="3"
+                android:clickable="false"
+                android:onClick="color1" />
+
+            <ImageButton
+                android:layout_width="44dp"
+                android:layout_height="36dp"
+                android:id="@+id/imageButton14"
+                android:src="@color/accent_material_light"
+                android:layout_row="1"
+                android:layout_column="3"
+                android:onClick="color3" />
+
+            <ImageButton
+                android:layout_width="44dp"
+                android:layout_height="36dp"
+                android:id="@+id/imageButton15"
+                android:src="@color/background_material_dark"
+                android:layout_row="0"
+                android:layout_column="4"
+                android:onClick="color2" />
+
+            <ImageButton
+                android:layout_width="44dp"
+                android:layout_height="36dp"
+                android:id="@+id/imageButton16"
+                android:src="@android:color/holo_orange_light"
+                android:layout_row="1"
+                android:layout_column="4"
+                android:onClick="color4" />
+
+        </GridLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:onClick="size3"
+                android:text="L"
+                android:nestedScrollingEnabled="true"
+                android:layout_row="1"
+                android:layout_column="5" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:onClick="size2"
+                android:text="M"
+                android:nestedScrollingEnabled="true"
+                android:layout_row="1"
+                android:layout_column="5" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:onClick="size1"
+            android:text="S"
+            android:nestedScrollingEnabled="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:onClick="clean"
+                android:text="C"
+                android:nestedScrollingEnabled="true"
+                android:layout_row="1"
+                android:layout_column="5" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:onClick="save"
+                android:text="A"
+                android:nestedScrollingEnabled="true"
+                android:layout_row="1"
+                android:layout_column="5" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.jsketch.grant.mobilesketch.CanvasView
+        android:id="@+id/signature_canvas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
