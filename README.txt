@@ -1,4 +1,4 @@
-CS446, Weixiang Deng, 20534709
+
 
 MobileSketch:
 I develop this android app in OS X. The main development tool I use is Intellij IDEA and Android Studio.
